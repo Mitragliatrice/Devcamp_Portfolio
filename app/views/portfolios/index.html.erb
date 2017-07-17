@@ -1,10 +1,15 @@
 <h1> Portfolio Items </h1>
 
+<%= link_to "Create New Portfolio", new_portfolio_path %>
+
 <% @portfolio_items.reverse.each do |portfolio_items| %>
-<p><%= portfolio_items.title %></p>
-<p><%= portfolio_items.subtitle %></p>
-<p><%= portfolio_items.body %></p>
-<p><%= image_tag portfolio_items.thumb_img unless portfolio_items.thumb_img.nil? %></p> 
-<i><%= "Created on: " + portfolio_items.created_at.strftime("%A - %B %d, %Y") unless portfolio_items.updated_at != portfolio_items.created_at %></i>
-<p><i><%= "Updated on: " + portfolio_items.updated_at.strftime("%A - %B %d, %Y") unless portfolio_items.updated_at == portfolio_items.created_at %></i></p>
+  <hr>
+  <p><%= portfolio_items.title %></p>
+  <p><%= portfolio_items.subtitle %></p>
+  <p><%= portfolio_items.body %></p>
+  <p><%= image_tag portfolio_items.thumb_img unless portfolio_items.thumb_img.nil? %></p> 
+  <i><%= "Created on: " + portfolio_items.created_at.strftime("%A - %B %d, %Y") + " at " + portfolio_items.updated_at.strftime("%I:%M %P") unless portfolio_items.updated_at != portfolio_items.created_at %></i>
+  <p><i><%= "Updated on: " + portfolio_items.updated_at.strftime("%A - %B %d, %Y") + " at " + portfolio_items.updated_at.strftime("%I:%M %P") unless portfolio_items.updated_at == portfolio_items.created_at %></i></p>
+  <%= link_to "Edit", edit_portfolio_path(portfolio_items.id) %>
+<!--   <a href=“/portfolios/<%= portfolio_items.id %>/edit”> Edit2 </a> -->
 <% end %>
