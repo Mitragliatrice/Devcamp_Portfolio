@@ -4,7 +4,7 @@
 
 <% @portfolio_items.reverse.each do |portfolio_items| %>
   <hr>
-   <p><%= link_to portfolio_items.title, portfolio_path(portfolio_items) %></p>
+   <p><%= link_to portfolio_items.title, portfolio_show_path(portfolio_items) %></p>
   <p><%= portfolio_items.subtitle %></p>
   <p><%= portfolio_items.body %></p>
   <p><%= image_tag portfolio_items.thumb_img unless portfolio_items.thumb_img.nil? %></p> 
