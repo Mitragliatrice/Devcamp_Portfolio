@@ -49,3 +49,12 @@ puts "8 portfolio items created"
 end
 
 puts "1 Angular portfolio items created"
+
+3.times do |technology|
+  Technology.create!(
+    name: "Tech #{technology}",
+    portfolio_id: Portfolio.last.id
+    )
+end
+
+puts "3 technologies created"
