@@ -5,8 +5,13 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+# Installed Manually
+# Devise authentication
+gem 'devise', '~> 4.3'
 # Friendly ID
 gem 'friendly_id', '~> 5.2', '>= 5.2.1'
+
+# Installed by Default
 # HTML and CSS Styler
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
