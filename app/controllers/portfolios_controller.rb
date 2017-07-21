@@ -43,7 +43,7 @@ class PortfoliosController < ApplicationController
     @portfolio_items = Portfolio.find(params[:id])
 
      respond_to do |format|
-      if @portfolio_items.update(params.require(:portfolio).permit(:title, :subtitle, :body))
+      if @portfolio_items.update(portfolio_params)
         format.html { redirect_to portfolios_url notice: 'Portfolio was successfully posted.' }
       else
         format.html { render :new }
@@ -56,8 +56,12 @@ class PortfoliosController < ApplicationController
   end
 
 
-
+      private
       def portfolio_params
-      params.require(:portfolio).permit(:title, :subtitle, :body, technologies_attributes: [:name])
+      params.require(:portfolio).permit(:title, 
+                                        :subtitle, 
+                                        :body, 
+                                        technologies_attributes: [:name]
+                                        )
     end
 end
