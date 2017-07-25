@@ -6,6 +6,8 @@ git_source(:github) do |repo_name|
 end
 
 # Installed Manually
+# Authorization gem
+gem 'petergate', '~> 1.7', '>= 1.7.5'
 # Devise authentication
 gem 'devise', '~> 4.3'
 # Friendly ID
