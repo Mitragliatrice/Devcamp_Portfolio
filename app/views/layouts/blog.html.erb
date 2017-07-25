@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
   <head>
     <title><%= @page_title %></title>
@@ -6,9 +6,8 @@
     
     <meta name="keywords" content="<%= @seo_keywords %>" />
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
+    <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'blogs', 'data-turbolinks-track': 'reload' %>
   </head>
 
 
@@ -16,7 +15,7 @@
 
   <body>
 
-<%= render "shared/nav", location: 'top' %>
+
 
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
@@ -24,10 +23,13 @@
 
 
     <%= yield %>
+    
+<%= render "shared/nav", location: 'bottom' %>
 
+<br>
+<br>
 
-
-<%= source_helper("application") %>
+<%= source_helper("blog") %>
 
 
   </body>

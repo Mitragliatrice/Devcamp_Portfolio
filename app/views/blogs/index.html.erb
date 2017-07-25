@@ -6,23 +6,14 @@
   <thead>
     <tr>
       <th>Title</th>
+      <th>Date</th>
       <th>Body</th>
       <th colspan="6"></th>
     </tr>
   </thead>
 
   <tbody>
-    <% @blogs.each do |blog| %>
-      <tr>
-        <td><%= blog.title %></td>
-        <td><%= blog.body %></td>
-        <td><%= blog.topic_id %></td>
-        <td><%= link_to blog.status, toggle_status_blog_path(blog) %></td>
-        <td><%= link_to 'View', blog %></td>
-        <td><%= link_to 'Edit Post', edit_blog_path(blog) %></td>
-        <td><%= link_to 'Delete Post', blog, method: :delete, data: { confirm: 'Are you sure? Double check!' } %></td>
-      </tr>
-    <% end %>
+    <%= render @blogs %>
   </tbody>
 </table>
 
