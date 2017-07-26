@@ -6,17 +6,6 @@ git_source(:github) do |repo_name|
 end
 
 # Installed Manually
-# Required for Bootstrap
-gem 'popper_js', '~> 1.9.9'
-gem 'jquery-rails'
-# Bootstrap
-gem 'bootstrap', '~> 4.0.0.alpha6'
-# Authorization gem
-gem 'petergate', '~> 1.7', '>= 1.7.5'
-# Devise authentication
-gem 'devise', '~> 4.3'
-# Friendly ID
-gem 'friendly_id', '~> 5.2', '>= 5.2.1'
 
 # Installed by Default
 # HTML and CSS Styler
@@ -64,3 +53,15 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Friendly ID
+gem 'friendly_id', '~> 5.2', '>= 5.2.1'
+# Devise authentication
+gem 'devise', '~> 4.3'
+# Authorization gem
+gem 'petergate', '~> 1.7', '>= 1.7.5'
+# Required for Bootstrap
+# Bootstrap
+gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'jquery-rails'
+gem 'popper_js', '~> 1.9.9'
