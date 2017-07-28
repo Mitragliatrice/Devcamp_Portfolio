@@ -1,6 +1,6 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
-  access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
+  access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit, :toggle_status]}, site_admin: :all
   layout "blog"
 
   # GET /blogs
@@ -73,7 +73,7 @@ class BlogsController < ApplicationController
     elsif @blog.published?
       @blog.draft!
       redirect_to blogs_url, notice: 'Post has been changed to a draft.'
-    end   
+    end
   end
 
 

@@ -157,7 +157,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 90rem;
+    width: 55rem;
   }
 }
 
@@ -166,11 +166,14 @@ body {
  */
 
 .card-block {
+
+  color: black;
   text-align: left;
+
 }
 
 .auth-links a {
- 
+
 }
 
 .register-text {
@@ -181,4 +184,9 @@ body {
   width: 22rem;
   margin: 0 auto;
   float: none;
+}
+
+.card {
+  margin-top: 60px;
+
 }
