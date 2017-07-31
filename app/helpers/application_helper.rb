@@ -58,6 +58,10 @@ module ApplicationHelper
     "active" if current_page? path
   end
 
+  def set_copyright
+    @copyright = MitsCopyrightGenerator::Renderer.copyright 'Colton Mathews', 'All rights reserved'
+  end
+
 end
 
 
