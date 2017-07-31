@@ -5,11 +5,11 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-# Installed Manually
+# Tether for bootstrap components
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
+end
 
-# Installed by Default
-# HTML and CSS Styler
-gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
 # Use postgresql as the database for Active Record
@@ -40,6 +40,8 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # binding.pry is the command used
+  gem 'pry-byebug', '~> 3.4', '>= 3.4.2'
 end
 
 group :development do
@@ -54,14 +56,24 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-# Friendly ID
-gem 'friendly_id', '~> 5.2', '>= 5.2.1'
-# Devise authentication
-gem 'devise', '~> 4.3'
-# Authorization gem
-gem 'petergate', '~> 1.7', '>= 1.7.5'
-# Required for Bootstrap
+# jQuery
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+
 # Bootstrap
 gem 'bootstrap', '~> 4.0.0.alpha6'
-gem 'jquery-rails'
-gem 'popper_js', '~> 1.9.9'
+
+# easy pagination
+gem 'will_paginate', '~> 3.1', '>= 3.1.6'
+
+# Turn id's into title's for URL SEO
+gem 'friendly_id', '~> 5.2', '>= 5.2.1'
+
+# User authentication
+gem 'devise', '~> 4.3'
+
+gem 'petergate', '~> 1.7', '>= 1.7.5'
+
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
+
+gem 'kaminari', '~> 1.0', '>= 1.0.1'
+
