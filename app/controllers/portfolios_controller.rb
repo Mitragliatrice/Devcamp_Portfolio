@@ -11,7 +11,7 @@ layout 'portfolio'
   end
 
   def angular
-    @angular_portfolio_items = Portfolio.angular
+    @angular_portfolio_item = Portfolio.angular
   end
 
   def new
@@ -21,7 +21,7 @@ layout 'portfolio'
 
   def create
     @portfolio_item = Portfolio.new(portfolio_params)
-    
+
     respond_to do |format|
       if @portfolio_item.save
         format.html { redirect_to portfolios_path, notice: 'Portfolio was successfully posted.' }
@@ -69,9 +69,9 @@ layout 'portfolio'
 
 
       def portfolio_params
-      params.require(:portfolio).permit(:title, 
-                                        :subtitle, 
-                                        :body, 
+      params.require(:portfolio).permit(:title,
+                                        :subtitle,
+                                        :body,
                                         technologies_attributes: [:name]
                                         )
     end
