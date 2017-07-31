@@ -77,3 +77,5 @@ gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
 
 gem 'kaminari', '~> 1.0', '>= 1.0.1'
 
+gem 'Mits_Copyright_Generator', git: 'https://github.com/Mitragliatrice/MitsCopyrightGenerator'
+
