@@ -6,7 +6,7 @@ before_action :set_portfolio_items, only: [:edit, :show, :update, :destroy]
 layout 'portfolio'
 
   def index
-    @portfolio_items = Portfolio.all
+    @portfolio_items = Portfolio.by_position
     @page_title = "Colton Mathews | Portfolio"
   end
 
