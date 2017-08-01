@@ -79,3 +79,5 @@ gem 'kaminari', '~> 1.0', '>= 1.0.1'
 
 gem 'Mits_Copyright_Generator', git: 'https://github.com/Mitragliatrice/MitsCopyrightGenerator'
 
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+

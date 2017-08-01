@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/Mitragliatrice/MitsCopyrightGenerator
-  revision: 7712396583b2110a35ec513998d4b03c84ae6d5f
+  revision: d45f4b064c9e4f7ffedd110806a1e17899988ce5
   specs:
-    Mits_Copyright_Generator (0.1.0)
+    Mits_Copyright_Generator (0.1.5)
 
 GEM
   remote: https://rubygems.org/
@@ -87,6 +87,8 @@ GEM
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
+    jquery-ui-rails (6.0.1)
+      railties (>= 3.2.16)
     kaminari (1.0.1)
       activesupport (>= 4.1.0)
       kaminari-actionview (= 1.0.1)
@@ -223,6 +225,7 @@ DEPENDENCIES
   friendly_id (~> 5.2, >= 5.2.1)
   jbuilder (~> 2.5)
   jquery-rails (~> 4.3, >= 4.3.1)
+  jquery-ui-rails (~> 6.0, >= 6.0.1)
   kaminari (~> 1.0, >= 1.0.1)
   listen (>= 3.0.5, < 3.2)
   petergate (~> 1.7, >= 1.7.5)
