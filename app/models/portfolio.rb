@@ -15,7 +15,7 @@ validates_presence_of :title, :body, :main_img, :thumb_img
   end
 
   def self.by_position
-      order("postion ASC")
+      order("position ASC")
   end
 
   after_initialize :set_default

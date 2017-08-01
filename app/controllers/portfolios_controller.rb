@@ -10,6 +10,10 @@ layout 'portfolio'
     @page_title = "Colton Mathews | Portfolio"
   end
 
+  def sort
+
+  end
+
   def angular
     @angular_portfolio_item = Portfolio.angular
   end

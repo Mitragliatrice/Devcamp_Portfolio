@@ -14,6 +14,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require tether
-//= require turbolinks
+//= require jquery_ui
+//= require html.sortable
 //= require bootstrap
+//= require turbolinks
 //= require_tree .
