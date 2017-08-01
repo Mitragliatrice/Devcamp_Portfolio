@@ -13,9 +13,9 @@
 //= require rails-ujs
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
 //= require tether
-//= require jquery_ui
 //= require html.sortable
-//= require bootstrap
 //= require turbolinks
+//= require bootstrap
 //= require_tree .

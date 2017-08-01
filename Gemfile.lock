@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/Mitragliatrice/MitsCopyrightGenerator
-  revision: 7712396583b2110a35ec513998d4b03c84ae6d5f
+  revision: d45f4b064c9e4f7ffedd110806a1e17899988ce5
   specs:
-    Mits_Copyright_Generator (0.1.0)
+    Mits_Copyright_Generator (0.1.5)
 
 GEM
   remote: https://rubygems.org/
