@@ -80,4 +80,12 @@ gem 'kaminari', '~> 1.0', '>= 1.0.1'
 gem 'Mits_Copyright_Generator', git: 'https://github.com/Mitragliatrice/MitsCopyrightGenerator'
 
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+# To help with image uploads
+gem 'carrierwave-aws', '~> 1.2'
+gem 'carrierwave', '~> 1.1'
+# Image Manipulation
+gem 'mini_magick', '~> 4.8'
+# Secret Keeper
+gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
+
 

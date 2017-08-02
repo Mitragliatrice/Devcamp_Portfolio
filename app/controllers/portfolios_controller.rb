@@ -77,6 +77,8 @@ layout 'portfolio'
 
       def portfolio_params
       params.require(:portfolio).permit(:title,
+                                        :main_img,
+                                        :thumb_img,
                                         :subtitle,
                                         :body,
                                         technologies_attributes: [:name]
