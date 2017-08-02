@@ -6,6 +6,9 @@ accepts_nested_attributes_for :technologies,
 include Placeholder
 validates_presence_of :title, :body, :main_img, :thumb_img
 
+  mount_uploader :thumb_img, PortfolioUploader
+  mount_uploader :main_img, PortfolioUploader
+
   def self.angular
       where(subtitle: 'Angular')
   end
@@ -23,5 +26,7 @@ validates_presence_of :title, :body, :main_img, :thumb_img
     self.main_img ||= Placeholder.image_gen(height:'600', width:'400')
     self.thumb_img ||= Placeholder.image_gen(height:'350', width:'200')
   end
+
+
 
 end
