@@ -16,6 +16,7 @@
 //= require jquery-ui
 //= require tether
 //= require html.sortable
+//= require cocoon
 //= require turbolinks
 //= require bootstrap
 //= require_tree .

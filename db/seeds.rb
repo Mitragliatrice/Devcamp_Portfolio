@@ -59,3 +59,14 @@ puts "1 Angular portfolio items created"
 end
 
 puts "3 technologies created"
+
+1.times do |admin|
+ User.create!(
+  name: 'Colton Mathews',
+  roles: 'site_admin',
+  password: 'Colton11!',
+  email: 'mathews.colton@gmail.com'
+  )
+end
+
+puts 'Admin created!'
