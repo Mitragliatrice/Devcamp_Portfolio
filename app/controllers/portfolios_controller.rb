@@ -31,6 +31,7 @@ layout 'portfolio'
 
     respond_to do |format|
       if @portfolio_item.save
+
         format.html { redirect_to portfolios_path, notice: 'Portfolio was successfully posted.' }
       else
         format.html { render :new }
