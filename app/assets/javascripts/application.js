@@ -17,6 +17,7 @@
 //= require tether
 //= require html.sortable
 //= require cocoon
+//= require gritter
 //= require turbolinks
 //= require bootstrap
 //= require_tree .

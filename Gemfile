@@ -87,5 +87,7 @@ gem 'carrierwave', '~> 1.1'
 gem 'mini_magick', '~> 4.8'
 # Secret Keeper
 gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
-
+# Nested Forms
 gem 'cocoon', '~> 1.2', '>= 1.2.10'
+
+gem 'gritter', '~> 1.2'

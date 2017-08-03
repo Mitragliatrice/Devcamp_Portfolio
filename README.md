@@ -25,4 +25,4 @@ alert('Hi there!')
 
 ### Known Errors
 
--Back to top and all portfolio links broken
+<s>-Back to top and all portfolio links broken</s>
