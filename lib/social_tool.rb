@@ -8,12 +8,12 @@ module SocialTool
       end
 
 
-      client.search("#rails", result_type: 'recent', lang: "en").take(6).collect do |tweet|
+      client.search("#rails", result_type: 'recent', lang: "en").take(3).collect do |tweet|
         "#{tweet.user.screen_name}: #{tweet.text}"
       end
     end
 
-        def self.twitter_search_ruby
+    def self.twitter_search_ruby
       client = Twitter::REST::Client.new do |config|
         config.consumer_key        = ENV.fetch("TWITTER_CONSUMER_KEY")
         config.consumer_secret     = ENV.fetch("TWITTER_CONSUMER_SECRET")
@@ -22,7 +22,7 @@ module SocialTool
       end
 
 
-      client.search("#ruby", result_type: 'recent', lang: "en").take(6).collect do |tweet|
+      client.search("#ruby", result_type: 'recent', lang: "en").take(3).collect do |tweet|
         "#{tweet.user.screen_name}: #{tweet.text}"
       end
     end
