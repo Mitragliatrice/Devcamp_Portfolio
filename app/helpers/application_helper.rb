@@ -25,6 +25,10 @@ module ApplicationHelper
         url: root_path,
         title: 'Home'
       },
+            {
+        url: portfolios_path,
+        title: 'Portfolio'
+      },
       {
         url: about_me_path,
         title: 'About Me'
@@ -33,13 +37,13 @@ module ApplicationHelper
         url: contact_me_path,
         title: 'Contact Me'
       },
+                  {
+        url: tech_news_path,
+        title: 'Tech News'
+      },
       {
         url: blogs_path,
         title: 'Blog'
-      },
-      {
-        url: portfolios_path,
-        title: 'Portfolio'
       },
     ]
   end
@@ -74,7 +78,6 @@ module ApplicationHelper
     js add_gritter(msg, title: "Colton Mathews' Portfolio", sticky: false, time: 3000)
 
   end
-
 end
 
 

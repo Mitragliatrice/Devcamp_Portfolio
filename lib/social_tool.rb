@@ -1,5 +1,5 @@
 module SocialTool
-    def self.twitter_search_rails
+    def self.twitter_search_coding
       client = Twitter::REST::Client.new do |config|
         config.consumer_key        = ENV.fetch("TWITTER_CONSUMER_KEY")
         config.consumer_secret     = ENV.fetch("TWITTER_CONSUMER_SECRET")
@@ -8,7 +8,7 @@ module SocialTool
       end
 
 
-      client.search("#rails", result_type: 'recent', lang: "en").take(3).collect do |tweet|
+      client.search("#coding", result_type: 'recent', lang: "en").take(3).collect do |tweet|
         "#{tweet.user.screen_name}: #{tweet.text}"
       end
     end
