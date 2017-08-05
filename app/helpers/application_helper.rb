@@ -62,6 +62,19 @@ module ApplicationHelper
     @copyright = MitsCopyrightGenerator::Renderer.copyright 'Colton Mathews', 'All rights reserved'
   end
 
+  def alerts
+    alert = (flash[:alert] || flash[:error] || flash[:notice])
+
+    if alert
+      alert_gen alert
+    end
+  end
+
+  def alert_gen msg
+    js add_gritter(msg, title: "Colton Mathews' Portfolio", sticky: false, time: 3000)
+
+  end
+
 end
 
 
