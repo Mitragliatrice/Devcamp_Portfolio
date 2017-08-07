@@ -65,6 +65,7 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 # easy pagination
 gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 
+## Custom Added Gems ##
 # Turn id's into title's for URL SEO
 gem 'friendly_id', '~> 5.2', '>= 5.2.1'
 
@@ -91,3 +92,5 @@ gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
 gem 'cocoon', '~> 1.2', '>= 1.2.10'
 
 gem 'gritter', '~> 1.2'
+
+gem 'redis', '~> 3.3', '>= 3.3.3'
