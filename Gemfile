@@ -93,5 +93,3 @@ gem 'cocoon', '~> 1.2', '>= 1.2.10'
 gem 'gritter', '~> 1.2'
 
 gem 'twitter', '~> 6.1'
-# Rich Text Editor
-gem 'tinymce-rails', '~> 4.6', '>= 4.6.5'
