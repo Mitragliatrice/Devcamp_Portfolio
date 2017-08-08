@@ -23,4 +23,12 @@ module BlogsHelper
     markdown_to_html.render(text).html_safe
 
   end
+
+  def blog_status_symbol blog
+    if blog.draft?
+      fa_icon('file-text-o')
+    else
+      fa_icon('file-text')
+    end
+  end
 end

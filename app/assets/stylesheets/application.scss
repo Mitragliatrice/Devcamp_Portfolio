@@ -255,10 +255,14 @@ body {
 
 .carousel .card{
   color: black;
-  opacity: .5;
+  opacity: .3;
   margin: auto;
-  width: 600px;
-  justify-content: center;
+  width: auto;
+  border-radius: 20px;
+}
+
+.carousel .card:hover {
+  opacity: .8;
 }
 
 
