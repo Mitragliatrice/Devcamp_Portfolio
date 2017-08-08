@@ -181,8 +181,12 @@ h6, .h6 {
 .comment-meta {
   font-size: .8em;
   font-style: italic;
-  margin-left: 25px;
+  padding-left: 25px;
   opacity: .4;
+  border-top: solid;
+  border-width: 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .comment-name {
