@@ -8,7 +8,7 @@ module SocialTool
     end
 
         client.search("#rubyonrails", result_type: "recent").take(1).collect do |tweet|
-        "#{tweet.user.screen_name}: #{tweet.text}"
+        "<u>#{tweet.user.screen_name}</u> <p>#{tweet.text}</p>"
   end
 end
 def self.twitter_search_coding
@@ -19,7 +19,7 @@ def self.twitter_search_coding
       config.access_token_secret = ENV.fetch("TWITTER_ACCESS_SECRET")
     end
             client.search("#coding", result_type: "recent").take(3).collect do |tweet|
-        "<div class='carousel-item'>#{tweet.user.screen_name}: #{tweet.text}</div>"
+        "<div class='carousel-item card'><u>#{tweet.user.screen_name}</u><p> #{tweet.text}</p></div>"
     end
 end
 
@@ -33,7 +33,7 @@ def self.twitter_search_webdev
     end
 
         client.search("#webdev", result_type: "recent").take(3).collect do |tweet|
-    "<div class='carousel-item'>#{tweet.user.screen_name}: #{tweet.text}</div>"
+    "<div class='carousel-item card'><u>#{tweet.user.screen_name}</u><p> #{tweet.text}</p></div>"
     end
   end
 end

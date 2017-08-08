@@ -14,7 +14,7 @@
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner" role="listbox">
   <% @tweets_rubyonrails.each do |tweet| %>
-    <div class="carousel-item active">
+    <div class="carousel-item card active">
       <%= twitter_parser tweet %>
     </div>
     <% end %>

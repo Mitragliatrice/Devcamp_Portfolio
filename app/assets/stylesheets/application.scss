@@ -245,5 +245,20 @@ body {
   padding: 5px;
   margin: 0px;
 }
+.carousel {
+  margin-top: 100px;
+}
+
+.carousel a {
+  color: grey;
+}
+
+.carousel .card{
+  color: black;
+  opacity: .5;
+  margin: auto;
+  width: 600px;
+  justify-content: center;
+}
 
 
