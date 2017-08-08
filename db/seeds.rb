@@ -1,7 +1,8 @@
 
-3.times do |topic|
+1.times do |topic|
   Topic.create!(
-    title: "Topic Number #{topic}")
+    title: "Rails"
+    )
 end
 
 puts "3 topics created"
@@ -11,7 +12,8 @@ puts "3 topics created"
  Blog.create!(
   title:"Test #{blog}",
   body:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rhoncus enim dolor, sit amet volutpat odio fringilla gravida. Curabitur cursus, velit vel posuere aliquet, leo eros congue enim, nec varius ante quam et mi. Maecenas dignissim, risus vitae semper mattis, turpis risus condimentum ex, eget congue tellus leo sit amet metus. Duis ut magna ut velit commodo maximus. Morbi ac massa augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec mi faucibus, luctus massa eu, malesuada velit. Vestibulum eget tortor mollis, pharetra lectus nec, molestie diam. Maecenas et orci congue, viverra purus eu, gravida purus. Etiam tristique tincidunt accumsan. Maecenas eu felis felis. Morbi cursus neque eget iaculis eleifend.",
-  topic_id: Topic.last.id
+  topic_id: "#{Topic.last.id}"
+
 )
 end
 
