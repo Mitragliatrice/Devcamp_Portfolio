@@ -62,9 +62,6 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 # Bootstrap
 gem 'bootstrap', '~> 4.0.0.alpha6'
 
-# easy pagination
-gem 'will_paginate', '~> 3.1', '>= 3.1.6'
-
 ## Custom Added Gems ##
 # Turn id's into title's for URL SEO
 gem 'friendly_id', '~> 5.2', '>= 5.2.1'

@@ -4,6 +4,7 @@ class PagesController < ApplicationController
     @skills = Skill.all
     @portfolios = Portfolio.all
     @page_title = "Colton Mathews | Home"
+    @tweets_arr = SocialTool.twitter_search
   end
 
   def about
