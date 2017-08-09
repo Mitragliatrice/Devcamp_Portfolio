@@ -4,11 +4,37 @@
     <div class="row">
       <div class="col-md-6">
         <%= image_tag "colton_600x300.jpg", width: 450, alt: "profile image", id: 'profile-image' %>
-      </div>
+          <button
+            class="btn btn-basic skill-btn"
+            type="button"
+            data-toggle="collapse"
+            data-target="#skills"
+            aria-expanded="false"
+            aria-controller="skills">
+            Skills
+          </button>
+          <div class="collapse" id="skills">
+            <div class="card card-block">
+              <div class="resume-skilllogos">
+                <%= link_to image_tag("rubylogo2.png"), "http://ruby-doc.org/" %>
+              </div>
+              <div class="resume-skilllogos">
+                <%= link_to image_tag("railslogo.png"), "http://rubyonrails.org/" %>
+              </div>
+              <div class="resume-skilllogos">
+                <%= link_to image_tag("html5logo.jpg"), "http://devdocs.io/html/" %>
+              </div>
+              <div class="resume-skilllogos">
+                <%= link_to image_tag("css3logo.png"), "http://devdocs.io/css/" %>
+              </div>
+            </div>
+          </div>
+        </div>
+
       <div class="col-md-6">
-       <p>Nulla eu bibendum orci. Cras sollicitudin vitae urna nec venenatis. Cras tincidunt rhoncus quam a egestas. Nam suscipit feugiat vestibulum. Nam a dignissim leo. Proin mollis neque quis massa gravida maximus. Aliquam erat volutpat. Fusce viverra porttitor eros. Quisque faucibus mi eu sem scelerisque finibus. Proin diam dolor, ultrices vulputate magna at, sagittis molestie nisl. Fusce risus odio, lacinia accumsan imperdiet ac, finibus eget lacus. Etiam eget finibus orci. Nam efficitur nisl et tincidunt porttitor. Donec quis sem dui. Cras lacinia eros quis tempus auctor.</p>
+       <p class="about-me-txt">Nulla eu bibendum orci. Cras sollicitudin vitae urna nec venenatis. Cras tincidunt rhoncus quam a egestas. Nam suscipit feugiat vestibulum. Nam a dignissim leo. Proin mollis neque quis massa gravida maximus. Aliquam erat volutpat. Fusce viverra porttitor eros. Quisque faucibus mi eu sem scelerisque finibus. Proin diam dolor, ultrices vulputate magna at, sagittis molestie nisl. Fusce risus odio, lacinia accumsan imperdiet ac, finibus eget lacus. Etiam eget finibus orci. Nam efficitur nisl et tincidunt porttitor. Donec quis sem dui. Cras lacinia eros quis tempus auctor.</p>
       <div class="row">
-        <div class="col-sm-4 job-buttons">
+        <div class="col-sm-6 job-buttons">
           <button
             class="btn btn-basic"
             type="button"
@@ -20,16 +46,16 @@
           </button>
           <div class="collapse" id="jobHistory">
             <div class="card card-block">
-              <div>
-                JOBSSSSSSSS
+              <div class="resume-logos">
+                <%= link_to image_tag("psdi_logo.png"), "https://www.productsourcingdirect.com" %>
               </div>
-              <div>
-                job 2
+              <div class="resume-logos">
+                <%= link_to image_tag("emc_logo.jpg"), "https://www.dellemc.com" %>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-4 job-buttons">
+        <div class="col-sm-6 job-buttons">
           <button
             class="btn btn-basic"
             type="button"
@@ -41,32 +67,11 @@
           </button>
           <div class="collapse" id="education">
             <div class="card card-block">
-              <div>
-                UVU
+              <div class="resume-logos"> 
+                <%= link_to image_tag("uvusquare.png"), "https://www.uvu.edu" %>
               </div>
-              <div>
-                Bottega
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 job-buttons">
-          <button
-            class="btn btn-basic"
-            type="button"
-            data-toggle="collapse"
-            data-target="#skills"
-            aria-expanded="false"
-            aria-controller="skills">
-            Skills
-          </button>
-          <div class="collapse" id="skills">
-            <div class="card card-block">
-              <div>
-                Ruby
-              </div>
-              <div>
-                Rails
+              <div class="resume-logos">
+                <%= link_to image_tag("bottega_logo.png"), "https://www.bottega.tech" %>
               </div>
             </div>
           </div>
