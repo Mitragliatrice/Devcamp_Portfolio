@@ -11,6 +11,7 @@ class PagesController < ApplicationController
 
   def about
      @page_title = "Colton Mathews | About Me"
+     @skills = Skill.all
   end
 
 def tech_news
