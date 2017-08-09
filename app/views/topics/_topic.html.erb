@@ -1,4 +1,4 @@
 <div>
-  <%= link_to topic.title, topic_path(topic) %>
-
+  <p><%= link_to topic.title, topic_path(topic) %>
+  <%= topic.blogs.count%></p>
 </div>
