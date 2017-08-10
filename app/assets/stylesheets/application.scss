@@ -246,6 +246,8 @@ h6,
 
 .app-footer {
     color: white;
+    padding: 0px;
+    z-index: -100;
 }
 
 .quiet-btn {
@@ -294,7 +296,7 @@ h6,
 
 .app-card-container>.card {
     padding: 20px;
-    background-color: rgba(255, 255, 255, .5)
+    background-color: rgba(255, 255, 255, .8)
 }
 
 .card>h2 {
@@ -306,24 +308,38 @@ h6,
     width: 100%;
     position: sticky;
 }
+.job-buttons button{
+    margin-top: 5px;
+}
+
+.resume-logos {
+    font-size: 12px;
+
+        float: right;
+}
 
 .resume-logos img {
-    width: 100px;
+    transform: scale(3);
+    max-height: 50px;
+    max-width: 20%;
     opacity: .8;
-    margin-top: 10px;
+    margin: 30px 10px 10px -10px;
     transition: all 0.2s ease-in-out;
 }
 
+
+
 .resume-logos img:hover {
-    transform: scale(1.25);
+    transform: scale(4.5);
     opacity: 1;
     box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
 }
 
 .resume-skilllogos img {
     opacity: .8;
-    width: 45px;
-    margin: 5px;
+    width: auto;
+    height: 60px;
+    margin: 10px;
     transition: all 0.2s ease-in-out;
 }
 
@@ -338,6 +354,7 @@ h6,
     margin-left: 15px;
     transition: all 1s ease-in-out;
 }
+
 
 .about-me-txt {
     border-bottom: solid;
